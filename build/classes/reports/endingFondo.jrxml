@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="603" pageHeight="790" columnWidth="533" leftMargin="35" rightMargin="35" topMargin="30" bottomMargin="20" uuid="744082c9-9048-4428-b777-333d3c9e29c9">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="FECHA" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="DESTINO" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TIPO" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="IDENTIFICACION" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="MATRICULA" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PILOTO" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="LICENCIA1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="COPILOTO" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="LICENCIA2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TIPOVUELO" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PROCEDENCIA" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="LLEGADA" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PASAJEROS1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PASAJEROS2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PASAJEROS3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PASAJEROS4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="OBSERVACIONES" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="AFAC" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="740" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="66" width="533" height="14" uuid="33c1608d-8252-4421-b2b5-061140beae4e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[BLVD. ADOLFO LÓPEZ MATEOS N° 1990, COL. LOS ALPES TLACOPAC, DELEG. ALVARO OBREGÓN, C.P. 01010, MÉXICO, D.F.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="254" y="4" width="279" height="20" uuid="787142e6-3677-470f-910c-f45b3db46264"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CIERRE DE PLAN DE VUELO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="254" y="19" width="279" height="13" uuid="dc6b1693-4e3a-4874-8216-f324353cd435"/>
+				<textElement textAlignment="Center">
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Arrival report]]></text>
+			</staticText>
+			<line>
+				<reportElement x="254" y="31" width="279" height="1" uuid="45079e44-46a0-49b3-bc9e-16d5a5a0fca6"/>
+			</line>
+			<staticText>
+				<reportElement x="258" y="34" width="82" height="13" uuid="95a53cc0-2eb0-4a93-8798-4538b24c7269"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[1) FECHA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="266" y="40" width="92" height="13" uuid="475e8975-c1cc-42bb-a405-35b4d1783b7d"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<line>
+				<reportElement x="389" y="32" width="1" height="34" uuid="7bcda3fa-351e-4339-9111-907939a37053"/>
+			</line>
+			<staticText>
+				<reportElement x="393" y="33" width="135" height="13" uuid="f1475756-33a4-4d45-9b4f-6e5264247574"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[2) AEROPUERTO/AERODROMO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="39" width="92" height="13" uuid="d716d5bc-b10d-455b-bc4f-d5f5eddb21b2"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Airport/Aerodrome]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement mode="Transparent" x="254" y="1" width="279" height="65" uuid="49f79c94-cd92-48d2-bfda-1c5f5379de2f"/>
+				<graphicElement>
+					<pen lineWidth="2.5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="11" y="82" width="100" height="13" uuid="2662b6e1-e1b5-40e5-ab8d-e1863ec4e1a9"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[3) TIPO DE AERONAVE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="88" width="92" height="13" uuid="f4984356-ef3e-47dd-b137-5edecfd257a5"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Type of aircraft]]></text>
+			</staticText>
+			<line>
+				<reportElement x="210" y="80" width="1" height="32" uuid="1cd600cb-4926-4165-9051-9f54bd828e4e"/>
+			</line>
+			<staticText>
+				<reportElement x="214" y="82" width="155" height="13" uuid="4fe10a3e-5ac3-4bb6-9ed0-fa29b62256cc"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[4) IDENTIFICACIÓN DEL AERONAVE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="88" width="92" height="13" uuid="290cf674-7729-4c3b-8093-90a67adfd891"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Aircraft identification]]></text>
+			</staticText>
+			<line>
+				<reportElement x="369" y="80" width="1" height="32" uuid="2fc107c7-b39a-4dbc-a433-f431019dfd58"/>
+			</line>
+			<staticText>
+				<reportElement x="373" y="81" width="155" height="13" uuid="49556c40-588e-42c6-8f0b-c34bf9d3c76b"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[5) MATRICULA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="381" y="87" width="92" height="13" uuid="e4476783-6edc-40e6-aaae-aec80bc79a30"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Register]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="112" width="533" height="1" uuid="285c5f70-e0c0-4ab1-b7f2-206f32f7a735"/>
+			</line>
+			<staticText>
+				<reportElement x="5" y="114" width="155" height="13" uuid="4d463769-730e-47b5-855c-16e3f6d3dd7f"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[6) PILOTO AL MANDO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="120" width="92" height="13" uuid="7c0e3876-e4b4-46a4-86a8-d598762cefea"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Pilot in command]]></text>
+			</staticText>
+			<line>
+				<reportElement x="167" y="113" width="1" height="56" uuid="5a7eab49-481d-44b5-b053-bc1f367d5491"/>
+			</line>
+			<staticText>
+				<reportElement x="172" y="113" width="82" height="13" uuid="02860d46-0b31-40e3-ab8d-0c76ca96ca33"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[7) N° DE LICENCIA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="119" width="92" height="13" uuid="2ff72e63-352d-41f5-a146-0211b6c05ae3"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[License Num.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="264" y="113" width="1" height="29" uuid="7ed4c2e4-aa2c-4bc5-adad-f5b6553af3f2"/>
+			</line>
+			<staticText>
+				<reportElement x="270" y="113" width="82" height="13" uuid="23224173-dba6-47af-bef2-509b6a9d4969"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[8) COPILOTO:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="119" width="92" height="13" uuid="f92a7731-4d56-473a-b022-396686519527"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Copilot]]></text>
+			</staticText>
+			<line>
+				<reportElement x="431" y="113" width="1" height="56" uuid="fe0cde13-7c86-4c90-9e58-c8a55a36d66a"/>
+			</line>
+			<staticText>
+				<reportElement x="436" y="114" width="82" height="13" uuid="1d4bc8a7-fe8b-4e7b-aecb-d4bb9100191b"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[9) N° DE LICENCIA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="120" width="92" height="13" uuid="8d0d59b1-3c7c-46e7-92f6-60ecf01d7061"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[License Num.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="142" width="533" height="1" uuid="9f62a512-f2a8-4a7b-88b2-c13ea98557f2"/>
+			</line>
+			<staticText>
+				<reportElement x="5" y="144" width="82" height="13" uuid="5149cbc6-e0b7-4723-b8ba-3f8c61ec9a32"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[10) TIPO DE VUELO:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="150" width="92" height="13" uuid="8ddb133d-6026-4de0-8383-ec7cc41422d4"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Type of flight]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="172" y="143" width="82" height="13" uuid="295e166f-e0cb-49c9-bd45-566e8fb592ff"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[11) PROCEDENCIA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="184" y="149" width="92" height="13" uuid="698bdf48-9ad4-4270-9196-ba539a6ba775"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Departure aerodrome]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="144" width="97" height="13" uuid="f170c815-ccbb-43b9-821e-177717927256"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[12) HORA DE LLEGADA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="448" y="150" width="85" height="13" uuid="49a75b96-207b-498c-8a04-cb2d8f2b078f"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Arrival time]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="169" width="533" height="1" uuid="9f4d9ce4-81b2-4d25-8708-39bba0656f51"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="5" y="171" width="82" height="13" uuid="e8350b74-f33a-4101-85e3-b2a419b3bf13"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[13) PASAJEROS:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="177" width="92" height="13" uuid="7f71306b-1422-4cf2-9ec0-20778256ebe9"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Passengers]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="187" width="533" height="1" uuid="bb3ad0e5-f98c-4250-8778-aa3de5c23e71"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="188" width="533" height="11" uuid="fc835c62-e036-472d-bba9-7b3bf0c4a90f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="199" width="533" height="11" uuid="c44b6bae-2dbc-4af4-90dd-4583732eb0b6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="210" width="533" height="11" uuid="043d209f-fa29-4b62-898b-32a1dd84a114"/>
+			</rectangle>
+			<line>
+				<reportElement x="0" y="232" width="533" height="1" uuid="52e20598-55df-4b43-ba70-a059ef0b8b2a"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="5" y="234" width="82" height="13" uuid="d95bc29e-3228-4000-a782-28cced602d0f"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[14) ONSERVACIONES:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="240" width="92" height="13" uuid="e837852e-81cf-4521-a3b7-53fba571bade"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Remarks]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="251" width="533" height="1" uuid="28d5ebef-f438-4193-b819-8c4098df4780"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="252" width="533" height="11" uuid="ab1744a3-69f2-4981-ab28-cdbdfacf96d6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="263" width="533" height="11" uuid="47e3fcff-143a-48a5-9ba3-09e128681d88"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="274" width="533" height="11" uuid="ef397be3-8581-4c28-ab85-2ec99c9e54cc"/>
+			</rectangle>
+			<line>
+				<reportElement x="0" y="295" width="533" height="1" uuid="70e47c07-6192-4140-aa6e-9e6d1ca67eca"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="5" y="297" width="82" height="13" uuid="30e65d4a-3f94-490a-b556-c5a6e9935c76"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[15) PILOTO/Pilot]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="303" width="92" height="13" uuid="70f5ae95-26b0-4841-8ed5-b79f155271fd"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Firma/signature]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-10" y="276" width="37" height="57" uuid="b0537b76-6997-4b1f-9aca-cbe76a74f765"/>
+				<textElement rotation="Left">
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[F-1-1402/A]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="341" width="330" height="8" uuid="964bd114-4af4-47de-a865-77a2c178cd41"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[Original: Piloto al mando de la aeronave	 	Copia:  Archivo (Por el mismo periodo del plan de vuelo)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="347" width="330" height="9" uuid="ef0fdad6-4dc9-447d-96a1-08a2e06c0c6b"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[Copia:   Comandancia del Aeropuerto		Copia:  Administración del aeropuerto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="419" y="329" width="100" height="20" uuid="8ac36b1f-f54d-4bf5-9899-58a6cdddbc57"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[1030403-F08]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement mode="Transparent" x="0" y="80" width="533" height="260" uuid="4b6eff09-5eee-4d75-bf22-211f0753eed5"/>
+				<graphicElement>
+					<pen lineWidth="2.5"/>
+				</graphicElement>
+			</rectangle>
+			<image>
+				<reportElement x="1" y="1" width="112" height="65" uuid="efebd0b8-d84b-4230-bd3e-e85598f4c780"/>
+				<imageExpression><![CDATA[$P{AFAC}]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="254" y="46" width="136" height="20" uuid="85494523-8c84-41f7-8f8f-0a4259432c6d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{FECHA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="391" y="46" width="138" height="20" uuid="f41cfbfa-8209-412b-b526-a87c88f54d38"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{DESTINO}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="2" y="93" width="209" height="20" uuid="5034825c-6c30-4f41-9360-460f944c2c8f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{TIPO}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="211" y="93" width="159" height="20" uuid="6a1d353c-b9e4-4593-8c5b-92872719e77c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{IDENTIFICACION}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="370" y="93" width="163" height="20" uuid="3ea6a779-7860-4074-82fe-91e92e9b7c85"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{MATRICULA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="2" y="123" width="165" height="20" uuid="f12098a4-1b21-47b6-b35b-5bbb82c1b150"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{PILOTO}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="167" y="123" width="98" height="20" uuid="773a3127-c75c-497e-af4c-15ef9217a75e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{LICENCIA1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="266" y="123" width="166" height="20" uuid="d2d92000-4848-4583-affd-a9b106840704"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{COPILOTO}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="432" y="123" width="97" height="20" uuid="971eb30b-9c89-4695-bd2c-2986def38111"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{LICENCIA2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="2" y="150" width="165" height="20" uuid="0d9a8569-c768-4599-a42a-d5f563a3c54c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{TIPOVUELO}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="167" y="150" width="265" height="20" uuid="41601779-cea2-4629-84af-92b84e69a9ec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{PROCEDENCIA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="432" y="150" width="97" height="20" uuid="e363f195-ec87-4a7a-bff4-1fcc285c84b4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{LLEGADA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="2" y="188" width="130" height="52" uuid="feb053ad-dcc1-4db7-a73e-5c314dca2ecb"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PASAJEROS1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="132" y="188" width="133" height="52" uuid="37a6ac0d-e0dd-4b47-890e-c550b83e37fe"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PASAJEROS2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="265" y="188" width="133" height="52" uuid="be93d691-440a-4cde-a5e6-b539d5828cd5"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PASAJEROS3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="398" y="188" width="135" height="52" uuid="fff24e8f-70ef-4ad6-bdbf-5f59830a48b2"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PASAJEROS4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="2" y="252" width="531" height="52" uuid="95ecef51-3d76-46d6-a864-6a945f226d0a"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{OBSERVACIONES}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
